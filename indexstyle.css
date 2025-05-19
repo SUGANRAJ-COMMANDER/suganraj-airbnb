@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(249, 249, 249);
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+header{
+    top: 0;
+    padding: 20px 0 20px 0;
+    display: inline-flex;
+    position: sticky;
+    width:100%;
+    justify-content: space-between;
+    background-color:rgb(249, 249, 249);
+    z-index: 100;
+    border-bottom-width: thin;
+}
+header h1{
+    font-size: 30px;
+    margin-left: 10px;
+    color:red;
+    cursor:pointer;
+    transition: all 0.1s;
+}
+header h1:hover{
+    color:coral;
+}
+.menuItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItems a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+   
+}
+
+.menuItems a:hover{
+    border-color: black;
+    border-bottom: 4px solid;
+    font-weight: 700;
+}
+.menuButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header p{
+    font-weight: 100;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.4s;
+    cursor:pointer;
+}
+header p:hover{
+    background-color: rgb(213, 213, 213);
+    
+}
+header button{
+    width: 20px;
+    cursor:pointer;
+    background-color: cadetblue;
+}
+
+
+.searching{
+    width:100%;
+    top:-8px;
+    display:flex;
+    position: sticky;
+    height:90px;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out;
+    z-index: 1010;
+ 
+}
+.search{
+    width: 65%;
+    height: 60px;
+    text-align: center;
+    background-color:rgb(249, 249, 249);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+}
+
+.sectional {
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    font-weight:bolder ;
+    overflow-y: auto;
+
+}
+
+
+.sectional span{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.scroll-btn-left {
+    position: absolute;
+    top: -15px;
+    right: 33px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+}
+
+.scroll-btn-right {
+    position: absolute;
+    top: -15px;
+    right: 3px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+
+.sectional div {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+
+.sectional img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.sectional  img:hover{
+    transform: scale(1.1);
+}
+
+
+/*footer---------------------------------------*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+
+.footer-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f8c102;
+}
+
+.footer-content p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+
+#ic1, #ic2, #ic3, #ic4, #ic5, #ic6, #ic7 ,#ic8{
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.sectional div {
+  scrollbar-width: none;
+}
+
+.sectional::-webkit-scrollbar {
+  height: 0;
+}
+
+.logo{
+    width: 30px;
+    height:30px;
+}
